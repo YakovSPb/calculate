@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="Startup HTML template OptimizedHTML 5">
+
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="icon" href="img/favicon.png">
+	<meta property="og:image" content="img/@1x/preview.jpg">
+	<link rel="stylesheet" href="css/ion.rangeSlider.min.css">
+	<link rel="stylesheet" href="css/styles.min.css">
+
+</head>
+
+<body>
+
+	<div class="main">
+		<h3>Заявка на кредит</h3>
+		<div class="calc">
+			<div class="polzunok">
+				<div class="polzunok__item">
+					<div class="polzunok__inner">
+						<div class="polzunok__title">
+							Сумма кредита
+						</div>
+						<div class="polzunok__result" id="polzunok__input_1">
+							300 000 ₽
+						</div>
+
+						<input type="text" class="js-range-slider" name="my_range" value="300000" />
+
+						<div id="polzunok"></div>	
+						<div class="polzunok__footer">
+							<div class="polzunok__start">300 000</div>
+							<div class="polzunok__end">6 000 000</div>
+						</div>
+					</div>				
+				</div>
+
+				<div class="polzunok__item polzunok__item__time">
+					<div class="polzunok__inner">
+						<div class="polzunok__title">
+							Срок кредита
+						</div>
+
+						<div class="polzunok__input">
+							<span id="pol_yaers">1</span>
+							<span id="pol_yaers_after">год</span>
+							<span id="pol_month"></span>
+							<span id="pol_month_after"></span>
+						</div>
+						<input type="text" class="js-range-slider2" name="my_range" value="300000" />
+						<div class="polzunok__footer">
+							<div class="polzunok__start">1 год</div>
+							<div class="polzunok__end">10 лет</div>
+						</div>
+					</div>				
+				</div>
+
+			</div>
+			<div class="result">
+				<div class="result__top">
+					<div class="result__item">
+						<div class="result__title">
+							Ежемесячный платеж
+						</div>
+						<div class="result__number">
+							<span id="result__number">57 176</span> ₽
+						</div>
+					</div>
+
+<!-- 					<div class="result__item">
+						<div class="result__title">
+							Процентная ставка
+						</div>
+						<div class="result__number">
+							12.6 %
+						</div>
+					</div> -->
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>

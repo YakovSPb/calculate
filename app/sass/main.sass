@@ -1,0 +1,316 @@
+@import vars
+@import fonts
+@import libs
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+textarea:focus
+	&::-webkit-input-placeholder
+		color: transparent!important
+	&::-moz-placeholder
+		color: transparent!important
+	&::-ms-input-placeholder
+		color: transparent!important
+input:focus
+	&::-webkit-input-placeholder
+		color: transparent!important
+	&::-moz-placeholder
+		color: transparent!important
+	&::-ms-input-placeholder
+		color: transparent!important
+
+html
+	-ms-overflow-style: none
+	scrollbar-width: none
+	&::-webkit-scrollbar
+		width: 0
+	&::-webkit-scrollbar
+		width: 0
+
+
+html
+  overflow: scroll
+  overflow-x: hidden
+::-webkit-scrollbar
+  width: 0px
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: 'Roboto', sans-serif
+	overflow-x: hidden
+	color: $text
+
+.calc
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	padding: 0 10px
+	flex-direction: column
+	align-items: center
+
+#pol_yaers
+	margin-right: 5px
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active
+	border-radius: 100%
+
+.main
+	max-width: 1300px
+	margin: 50px auto 0 auto
+	padding-bottom: 100px
+	+media-breakpoint-down(sm)
+		margin: 0 auto 0 auto
+	h3
+		font-size: 40px
+		text-align: center
+		margin: 15px 0 50px
+		font-size: 36px
+		font-weight: normal
+		+media-breakpoint-down(md)
+			margin: 15px 0 5px
+
+.polzunok__inner
+	position: relative
+	border: 1px solid lightgray
+	border-radius: 5px
+	width: 100%
+	height: 60px
+	+media-breakpoint-down(lg)
+		margin: 0 auto
+
+.polzunok__item
+	margin-bottom: 60px
+	margin-bottom: 44px
+
+.result__item
+	min-width: 220px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	+media-breakpoint-down(lg)
+		margin: 0 auto!important
+	+media-breakpoint-down(md)
+		text-align: center
+	&:nth-child(1)
+		margin-right: 50px
+		.result__number
+			font-size: 40px
+			color: #0071BC
+	&:nth-child(2)
+		.result__number
+			font-size: 40px
+
+#pol_month
+	margin-right: 5px
+
+.ui-slider-horizontal
+	height: 1px
+	border: 0!important
+	.ui-slider-handle
+		top: -10px
+		cursor: pointer
+
+.ui-widget-header
+	background: #0071BC
+	height: 4px!important
+
+#pol_yaers_after
+	margin-right: 5px
+
+#polzunok
+	position: absolute
+	left: 0
+	bottom: 0
+	width: 478px
+
+.polzunok__input
+	width: 256px
+	border: 0
+	padding-right: 30px
+	font-size: 20px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	margin-top: 25px
+	cursor: default
+	color: transparent
+	text-shadow: 0 0 0 #333
+	font-size: 30px
+	position: absolute
+	top: -32px
+	left: 170px
+
+.ui-state-default
+	position: relative
+	&:after
+		content: ''
+		-webkit-transition: -webkit-transform .3s
+		background-color: #0071BC
+		border-radius: 50%
+		display: block
+		height: 9px
+		transition: -webkit-transform .3s
+		transition: transform .3s
+		transition: transform .3s,-webkit-transform .3s
+		width: 9px
+		margin-top: 5px
+		margin-left: 5px
+
+.polzunok__title
+	font-size: 13px
+	position: absolute
+	top: 4px
+	left: 8px
+
+body
+
+.ui-widget-content
+	background-color: transparent!important
+
+.result__title
+	margin-bottom: 10px
+	max-width: 162px
+	line-height: 25px
+	+media-breakpoint-down(xs)
+		font-size: 18px
+		text-align: left
+		margin-bottom: 0
+		max-width: 145px
+.result__number
+		line-height: 35px
+		+media-breakpoint-down(xs)
+			width: 155px
+			font-size: 33px!important
+.polzunok
+	width: 480px
+	max-width: 590px
+	margin-right: 0
+	width: 100%
+	+media-breakpoint-down(lg)
+		margin: 0 auto
+		padding-right: 0
+.polzunok__header
+	width: 100%
+	height: 80px
+	background-color: lighten(#0071bc, 50%)
+	text-transform: uppercase
+	font-size: 20px
+	margin-bottom: 20px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: center
+	align-items: center
+	+media-breakpoint-down(sm)
+		height: 60px
+
+
+
+.result__top
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	+media-breakpoint-down(lg)
+		flex-direction: column
+		margin: 0 auto
+
+.polzunok__item__time
+	.ui-slider-horizontal
+		.ui-slider-range
+			top: 9px
+		.ui-slider-handle
+			top: 0px
+
+.polzunok__footer
+	width: 100%
+	color: rgba(0,0,0,.4)
+	position: absolute
+	bottom: -32px
+	left: 0
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+
+.result
+	font-size: 20px
+	max-width: 590px
+	width: 100%
+	+media-breakpoint-down(lg)
+		margin: 0 auto
+
+
+// NEW 
+.irs--flat .irs-handle
+	background-color: #0071bc
+	width: 23px
+	height: 23px
+	border-radius: 100%
+	top: 44px
+	cursor: pointer
+.irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single
+	display: none
+.irs--flat .irs-handle > i:first-child
+	display: none
+.irs--flat .irs-line
+	top: 53px
+	height: 8px
+	background-color: transparent
+	border-top: 1px solid #d3d3d3
+	border-top-right-radius: 0px
+
+.irs--flat .irs-bar
+	top: 51px
+	height: 8px
+	background-color: #d3d3d3
+
+
+.irs--flat .irs-min, .irs--flat .irs-max
+	display: none
+#polzunok__input_1
+	position: absolute
+	top: -5px
+	left: 150px
+	font-size: 30px
+	+media-breakpoint-down(xs)
+		font-size: 27px
+
+// rangeSlider2
+.polzunok__item__time
+	.irs--flat .irs-line
+		top: 52px
+	.irs--flat .irs-bar
+		top: 52px
+	.irs--flat .irs-handle
+		top: 42px
+	.polzunok__input
+		+media-breakpoint-down(xs)
+			font-size: 21px
+			top: -20px
+			left: 111px
