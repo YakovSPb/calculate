@@ -76,7 +76,7 @@ body
 	margin: 50px auto 0 auto
 	padding-bottom: 100px
 	+media-breakpoint-down(sm)
-		margin: 0 auto 0 auto
+		margin: 50px auto 0 auto
 	h3
 		font-size: 40px
 		text-align: center
@@ -100,18 +100,19 @@ body
 	margin-bottom: 44px
 
 .result__item
-	min-width: 220px
+	width: 100%
 	display: -webkit-flex
 	display: -moz-flex
 	display: -ms-flex
 	display: -o-flex
 	display: flex
+	justify-content: space-between
+	align-items: flex-end
 	+media-breakpoint-down(lg)
 		margin: 0 auto!important
 	+media-breakpoint-down(md)
 		text-align: center
 	&:nth-child(1)
-		margin-right: 50px
 		.result__number
 			font-size: 40px
 			color: #0071BC
@@ -188,19 +189,17 @@ body
 	background-color: transparent!important
 
 .result__title
-	margin-bottom: 10px
-	max-width: 162px
 	line-height: 25px
 	+media-breakpoint-down(xs)
 		font-size: 18px
+		line-height: 20px
 		text-align: left
 		margin-bottom: 0
-		max-width: 145px
 .result__number
 		line-height: 35px
 		+media-breakpoint-down(xs)
 			width: 155px
-			font-size: 33px!important
+			font-size: 30px!important
 .polzunok
 	width: 480px
 	max-width: 590px
@@ -262,6 +261,7 @@ body
 	font-size: 20px
 	max-width: 590px
 	width: 100%
+	margin-top: 15px
 	+media-breakpoint-down(lg)
 		margin: 0 auto
 
